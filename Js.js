@@ -8,11 +8,27 @@ function w3_open() {
     document.getElementById("myOverlay").style.display = "none";
   }
   
-  var i=0;
-  text = "How can we help you?";
+
+
+
+
+
+
+
+
   
+  //typing 
+
+
+  
+  var i=0; // initialize counter at 0
+  text = "How can we help you?"; //var named text - to be typed
+  
+
+
+
   function typing(){
-    if(i<text.length){
+    if(i<text.length){ //if var i is less than the length  of the the text var then append the character
       document.getElementById("typo").innerHTML += text.charAt(i);
       i++;
       setTimeout(typing,90);
