@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Complaint.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <script src="Js.js"> </script>
 
     <title>Our form</title>
     <style>
@@ -19,102 +19,137 @@
             <img src="logo2.jpg" alt="show" style="width:150px; height:100x;">
         </div>
 
-        <div class="topnav" id="myTopnav">
-            <a href="Home.html" class="active">Home</a>
-            <a href="About us.html">About us</a>
-            <a href="Government.html">City Departments</a>
-
-            <br>
-           
-
-
+        <div class="topnav" id="myNav">
+            <a href="Home.html" class="current link">Home</a>
+            <a href="About us.html" class="link">About us</a>
+            <a href="Government.html" class="link">City Departments</a>
         </div>
+    </div>
     </div>
 </head>
 
 <body>
     <div class="demo">
-    <br><br><br><br>
-    <fieldset class="field">
-        <legend>
+        <br><br><br><br>
+        <fieldset class="field" action="#" 
+        onsubmit="return validation()" method="post">
 
-        </legend>
-        <div class="container" id="complaint">
-            <h1 class="complaint"><b>Complaint Form.</b></h1>
-            <p>Please fill in the following and our team will get back to you ASAP</p>
-            <br>
-            <br>
-            <form action="C:\My work\New folder\thankyou.html" target="_blank">
-                <div class="name">
-                    <div class="lbl"> <label>Name And Surname:</label>
+            <div class="container" id="complaint">
+
+
+                <div id="thank_you" style="display: none;">
+                    <h2>Thanks for filling up the form!</h2>
+                    <h3>Our team will get back to you ASAP</h3>
+                    <button type="submit">Close</button>
+                </div>
+
+                <form id="form" target="_blank">
+                    <div class="name">
+
+                        <h1 class="complaint"><b>Complaint Form.</b></h1>
+                        <p>Please fill in the following and our team will get back to you ASAP</p>
                         <br>
-                    </div>
-                    <div class="text"><input type="text" name="Name" required></div>
-
-                </div>
-                <br>
-                <br>
-                <div class="Cell">
-                    <div class="lbl"><label>Cell number:</label></div>
-                    <div class="text"><input class="number" type="text"
-                            oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
-                            maxlength="10" required></div>
-
-                </div>
-                <br>
-                <br>
-                <div class="addres">
-                    <div class="lbl"><label>Address:</label>
                         <br>
-                    </div>
-                    <div class="text"><textarea class="add" name="Address" required></textarea></div>
 
-                </div>
-                <br>
-                <br>
-                <div><h4> I want to report:</h4>
-                    <div class="lbl">
-                        
-                        <label for="electric"> Electricity problem:</label><br>
-                    </div>
-                    <div class="text"><input type="checkbox" id="electric" name="electric" value="Electricity">
-                       
+                        <div class="lbl"> <label>Name And Surname:</label>
+                            <br>
+                        </div>
+                        <div class="text">
+                            <input class="name" type="text"
+                                oninput="this.value = this.value.replace(/[^A-z ]/g, '').replace(/(\..*)\./g, '$1');"
+                                 required>
+                        </div>
                     </div>
 
-                    <div class="lbl"><label for="water"> Water pipe problem:</label></div>
-                    <div class="text"><input type="checkbox" id="water" name="water" value="Water pipe">
-                      
+                    <br>
+                    <br>
+                    <div class="Cell">
+                        <div class="lbl"><label>Cell number:</label></div>
+                        <div class="text">
+                            <input class="number" type="text"
+                                oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
+                                maxlength="10" required>
+                        </div>
+
+                    </div>
+                    <br>
+                    <br>
+                    <div class="addresS">
+                        <div class="lbl"><label>Address:</label>
+                            <br>
+                        </div>
+
+                        <div class="text"><textarea class="add" name="Address" required></textarea>
+
+                        </div>
+
+                    </div>
+                    <br>
+                    <br>
+                    <div>
+                        <h4> I want to report:</h4>
+                        <div class="lbl">
+
+                            <label for="electric"> Electricity problem:</label><br>
+                        </div>
+                        <div class="text"><input type="radio" class="check" id="radio" name="checkbox"
+                                value="Electricity">
+
+                        </div>
+
+                        <div class="lbl"><label for="water"> Water pipe problem:</label></div>
+                        <div class="text"><input type="radio" class="check" id="radio" name="checkbox"
+                                value="Water pipe">
+
+                        </div>
+
+                        <div class="lbl"><label for="sanitation"> Blocked drain:</label></div>
+                        <div class="text"><input type="radio" class="check" id="radio" name="checkbox"
+                                value="Drain">
+
+                        </div>
+
+                        <br><br><br><br>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="dis">
+                        <div class="lbl"> <label for="Description">Description of the problem:</label></div>
+                        <div class="text"><textarea class="issue" id="Description" name="Description"
+                                placeholder="Optional" style="height:50px"></textarea></div>
+
+                    </div>
+                    <br><br><br><br><br><br><br>
+                    <div class="btn">
+
+                        <button type="submit" class="button" name="button">Submit</button>
+                        <div class="Js"></div>
                     </div>
 
-                    <div class="lbl"><label for="sanitation"> Blocked drain:</label></div>
-                    <div class="text"><input type="checkbox" id="sanitation" name="sanitation" value="Drain">
-                       
-                    </div>
-
-                    <br><br><br><br>
-                </div>
-                <br>
-                <br>
-                <div class="dis">
-                    <div class="lbl"> <label for="Description">Description of the problem:</label></div>
-                    <div class="text"><textarea class="issue" id="Description" name="Description" placeholder="Optional"
-                            style="height:50px"></textarea></div>
-
-                </div>
-                <br><br><br><br><br><br><br>
-                <div class="btn"><button type="submit" class="button" onclick="myFunction()">Submit</button></div>
+                    <script>
+                        function validation() {
+                            
+                            if (document.getElementById('radio').checked == false) {
+                                window.alert("Please select what you want to report");
+                            } 
+                        }
+                    
+                    </script>
 
                     <script>
                         function myFunction() {
                             alert("Your complaint has been sent.");
                             window.location = "Home.html";
                         }
+
+
+
                     </script>
-            </form>
-        </div>
-    </fieldset>
-    <br><br><br><br>
-</div>
+                </form>
+            </div>
+        </fieldset>
+        <br><br><br><br>
+    </div>
 </body>
 <footer class="footer">
     <div class="contents">
