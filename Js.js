@@ -36,3 +36,9 @@ function w3_open() {
   }
 
   typing();
+
+
+  function highlight(element){
+  document.this.style.color = "black";
+  }
+
