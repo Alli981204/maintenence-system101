@@ -29,7 +29,7 @@
             text-align: center;
             padding: 14px 16px;
             text-decoration: none;
-            font-size: 23px;
+            font-size: x-large;
             display: flex;
         }
 
@@ -90,11 +90,6 @@
             display: flex;
             padding: auto;
             background-color: rgb(101, 122, 143);
-        }
-
-        .logo {
-            padding-left: 10px;
-            padding-top: 10px;
         }
 
         .topnav {
