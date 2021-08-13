@@ -21,3 +21,16 @@ var nav = document.getElementById("myNav");
             this.className += " current";
           });
         }
+
+        var i=0;
+        text = "How can we help you?";
+        
+        function typing(){
+          if(i<text.length){
+            document.getElementById("typo").innerHTML += text.charAt(i);
+            i++;
+            setTimeout(typing,90);
+          }
+        }
+      
+        typing();
