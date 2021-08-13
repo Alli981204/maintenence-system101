@@ -208,12 +208,6 @@
             display: flex;
             flex-direction: row;
         }
-
-        .logo {
-            padding-left: 10px;
-            padding-top: 10px;
-        }
-
        
         .active a {color: #FFF;}
 
