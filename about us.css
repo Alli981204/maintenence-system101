@@ -54,12 +54,7 @@
     color:
   } */
   
-  .social {
-      color: lightslategra;
-      margin: 3pt;
-  
-  }
-  
+
   .topnav {
       background-color: rgb(101, 122, 143);
       overflow: hidden;
@@ -225,7 +220,8 @@
 .social{
      text-align: right;
      padding-left: 430px;
-    }
+     padding-left: 23%;
+}
 
 .address{
      text-align: left;
