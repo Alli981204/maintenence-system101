@@ -10,7 +10,7 @@
         .topnav a:hover {
             background-color: #ddd;
             color: white;
-            size: 1ch;
+           
         }
         .topnav .current {
             background-color: rgb(182, 179, 179);
@@ -29,19 +29,24 @@
             text-align: center;
             padding: 14px 16px;
             text-decoration: none;
-            font-size: x-large;
+            
             display: flex;
         }
 
         .Government {
             color: rgb(200, 204, 193);
-            font-style:   Arial;
+            
             /* border-width: 3px;
             border-color: black;
             border-style: solid; */
             background-color: whitesmoke;
 
 
+        }
+        .link{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 22px;
+            
         }
 
         .midle {
@@ -88,7 +93,7 @@
 
         .container {
             display: flex;
-            padding: auto;
+            
             background-color: rgb(101, 122, 143);
         }
 

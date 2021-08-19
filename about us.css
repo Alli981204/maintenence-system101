@@ -190,10 +190,7 @@
     color: rgb(200, 204, 193);
   }
  
-.topnav {
-    padding-left: 53%;
-    padding-top: 7%;
-    }
+
 
 .fh1{
     font-size: larger;
@@ -300,7 +297,7 @@
   
   .card, img{
     border-radius: 2.5px;
-    padding: 3.5px;
+   
     height: auto;
   }
   /* center the cards */

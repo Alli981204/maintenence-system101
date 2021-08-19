@@ -8,10 +8,27 @@
             background-image: -webkit-repeating-linear-gradient();
 
         }
-     
+        .topicsCoverage{
+            font-family: 'Roboto', sans-serif;
+        }
+        #typo{
+            font-family: 'Montserrat', sans-serif; 
+        }
+        .link{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 22px;
+            
+            
+        }
+        #welcome{
+            font-family: 'Roboto', sans-serif;
+        }
         .demo{
             height: 100%;
             background-image: linear-gradient(to right, whitesmoke, rgb(151, 149, 149));
+        }
+        .picturehome{
+            width: 252px;
         }
 
         .picture1 a:hover {
@@ -20,8 +37,8 @@
 
         }
         .topnav {
-            padding-left: 55%;
-            padding-top: 7%;
+            padding-left: 48%;
+            padding-top: 4%;
 
 
         }
@@ -48,7 +65,7 @@
             text-align: center;
             padding: 14px 16px;
             text-decoration: none;
-            font-size: 23px;
+         
         }
 
         h1 {
@@ -84,6 +101,7 @@
             font-size: large;
             text-align: justify;
             text-justify: inter-word;
+            width:20%;
         }
 
         .pic2 {
@@ -94,6 +112,7 @@
             font-size: large;
             text-align: justify;
             text-justify: inter-word;
+            width:20%;
         }
 
         .pic3 {
@@ -104,6 +123,7 @@
             text-justify: inter-word;
             padding: 30px;
             background-color: #DEDEDE;
+            width:20%;
         }
         .pic4{
             flex: 1;
@@ -113,6 +133,7 @@
             text-justify: inter-word;
             padding: 30px;
             background-color: #E9EAEC;
+            width:20%;
         }
         @media screen and (max-width:760px) {
             .fir{
