@@ -34,3 +34,6 @@ var nav = document.getElementById("myNav");
         }
       
         typing();
+        
+
+      
